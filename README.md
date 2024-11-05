@@ -64,6 +64,11 @@ FROM SalesData
 GROUP BY Product
 ORDER BY TotalSales DESC;
 ```
+Product | TotalSales
+--------|------------
+Shoes	  | 613380
+
+
 4. calculate monthly sales totals for the current year
 ```
 SELECT Month(OrderDate) AS Month,
