@@ -1,16 +1,16 @@
 # Project Title: - SALES DATA ANALYSIS
-```
+---
 
 ## Project Overview
-```
+---
 This Project is designed to analysze and derive valuable insights from a sales dataset for the year 2023 to 2024. The goal is to understand sales trends, identify top performing products, analyze regional contributions, and gain deeper knowledge about customer purchases.
 
 ## Data Sources 
-```
+---
 The primary source of data used in this analysis is the CustomerData set.
 
 ## Tools Used
-```
+---
 1. Microsoft Excel [Download here](https://www.microsoft.com)
 - For data cleaning and analysis, creating pivot tables, and calculating metrics such as average sales per product and total revenue by region.
 Enabled detailed inspection and summary of sales data to find trends and patterns.
@@ -21,12 +21,69 @@ Enabled detailed inspection and summary of sales data to find trends and pattern
 3. Power BI
 - Used to create interactive dashboards and visualizations.
 
+## Data Cleaning and Preparation
+---
+In the initial stage of data cleaning and preparation, we performed the following steps to clean the data;
+ - Data Loading and Inspection
+- Handling Missing Data
+- Data Cleaning and Formatting
 
-Utilized to write queries for extracting key business insights from the dataset.
-Provided the ability to answer complex questions, such as finding the highest-selling product, calculating total revenue per product, and analyzing monthly and regional sales performance.
-Power BI:
+## Exploratory Data Analysis 
+---
+The EDA involves the following key questions;
+retrieve the total sales for each product category.
+- find the number of sales transactions in each region.
+- find the highest-selling product by total sales value.
+- calculate total revenue per product.
+- calculate monthly sales totals for the current year.
+- find the top 5 customers by total purchase amount.
+- calculate the percentage of total sales contributed by each region.
+- identify products with no sales in the last quarter.
 
-Used to create interactive dashboards and visualizations.
+## Data Analysis
+---
+Below are examples of some SQL queries and DAX expressions used during the analysis to extract and analyze key insights from the Sales dataset:
+
+SQL CODES
+1. Retrieve All Data for Initial Inspection
+```
+SELECT * FROM SalesData;
+```
+---
+2. find the number of sales transactions in each region.
+```
+SELECT Region, COUNT(OrderID) AS NumOfTransactions
+FROM SalesData
+GROUP BY Region;
+```
+---
+3. find the highest-selling product by total sales value.
+```
+SELECT Top (1) Product, SUM(Sales) AS TotalSales
+FROM SalesData
+GROUP BY Product
+ORDER BY TotalSales DESC;
+```
+4. calculate monthly sales totals for the current year
+```
+SELECT Month(OrderDate) AS Month,
+    SUM(Sales) AS MonthlySalesTotal
+FROM SalesData WHERE YEAR(OrderDate) = 2024
+GROUP BY Month(OrderDate)
+ORDER BY Month;
+```
+---
+5. identify products with no sales in the last quarter.
+```
+SELECT Product FROM salesdata
+GROUP BY Product
+HAVING SUM(CASE 
+WHEN OrderDate BETWEEN '2024-06-01' AND '2024-08-31' 
+THEN 1 ELSE 0 END) = 0
+```
+
+
+
 
 
 
