@@ -68,7 +68,8 @@ SELECT Region, COUNT(OrderID) AS NumOfTransactions
 FROM SalesData
 GROUP BY Region;
 ```
-![image](https://github.com/user-attachments/assets/340f3947-7a92-4b9f-8a56-346435790ba3)
+![image](https://github.com/user-attachments/assets/008e4732-b255-4053-bb3d-ab4d5883071c)
+
 
 ---
 3. find the highest-selling product by total sales value.
@@ -82,6 +83,9 @@ Product | TotalSales
 --------|------------
 Shoes	  | 613380
 
+![image](https://github.com/user-attachments/assets/04a83ace-ebae-48c5-939f-90d80b3586f7)
+
+
 
 4. calculate monthly sales totals for the current year
 ```
@@ -91,6 +95,9 @@ FROM SalesData WHERE YEAR(OrderDate) = 2024
 GROUP BY Month(OrderDate)
 ORDER BY Month;
 ```
+![image](https://github.com/user-attachments/assets/c1e9c6c5-c951-47c2-a893-56f17e5e3e53)
+
+
 ---
 5. identify products with no sales in the last quarter.
 ```
