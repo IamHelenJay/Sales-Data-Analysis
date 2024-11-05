@@ -68,6 +68,8 @@ SELECT Region, COUNT(OrderID) AS NumOfTransactions
 FROM SalesData
 GROUP BY Region;
 ```
+![image](https://github.com/user-attachments/assets/340f3947-7a92-4b9f-8a56-346435790ba3)
+
 ---
 3. find the highest-selling product by total sales value.
 ```
