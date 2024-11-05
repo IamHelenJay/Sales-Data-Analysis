@@ -1,6 +1,18 @@
 # Project Title: - SALES DATA ANALYSIS
 ---
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools Used](#tools-used)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [Results and Findings](#results-and-findings)
+- [Recommendations](#recommendations)
+---
+
 ## Project Overview
 ---
 This Project is designed to analysze and derive valuable insights from a sales dataset for the year 2023 to 2024. The goal is to understand sales trends, identify top performing products, analyze regional contributions, and gain deeper knowledge about customer purchases.
@@ -86,6 +98,12 @@ HAVING SUM(CASE
 WHEN OrderDate BETWEEN '2024-06-01' AND '2024-08-31' 
 THEN 1 ELSE 0 END) = 0
 ```
+
+## Results and Findings
+---
+
+## Recommendations
+---
 
 
 
