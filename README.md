@@ -110,10 +110,33 @@ THEN 1 ELSE 0 END) = 0
 
 ## Results and Findings
 ---
+The analysis yielded the following quantitative insights;
+- Shoes is the highest revenue-generating product, making them a top focus for marketing and stock optimization.
+- The count of sales transactions varied slightly across regions:
+North: 2,481 transactions
+East: 2,483 transactions
+South: 2,480 transactions
+West: 2,477 transactions
+Observation: The number of transactions was fairly balanced, with the East region having a marginally higher count. This indicates consistent customer engagement across all regions.
+- February and August had the highest monthly sales totals, indicating potential seasonal factors or successful promotional campaigns during those months.
+- The consistency in high purchase amounts among the top customers highlights an opportunity for loyalty programs or personalized marketing to retain and grow this customer segment.
+- The South region contributed the most to total sales, making it a key market for targeted campaigns. East also showed significant potential.
+![image](https://github.com/user-attachments/assets/a3e56915-133b-44dc-aa97-9e214c02994e)
+- Products that had no recorded sales in the last quarter (October to December):
+Jacket, Socks, Shirt.
+The absence of sales for these products in the last quarter suggests a need for review—potential causes might include seasonal trends, stock shortages, or reduced customer interest.
 
 ## Recommendations
 ---
+Based on the results and findings from the customer data analysis, the following recommendations are suggested to improve product performance, enhance regional strategies, and optimize customer engagement;
 
+1. Focus on High-Performing Products: Increase marketing and maintain adequate stock levels for top-sellers like Shoes and Shirt to sustain high sales.
+
+2. Revitalize Underperforming Products: Address low sales in Jacket, Socks, and Shirt with targeted promotions and product strategy reviews, especially in the last quarter.
+
+3. Enhance Regional Marketing: Strengthen efforts in the South region with loyalty programs and targeted campaigns, while boosting visibility and sales in the West.
+
+4. Engage High-Value Customers: Implement loyalty programs and personalized marketing for top customers to encourage repeat purchases and maximize customer lifetime value.
 
 
 
